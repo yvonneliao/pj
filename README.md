@@ -1,4 +1,6 @@
 # Welcome!
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+This is a README. 
+
+READMEs are where we communicate what the project is and how to use it.
 
