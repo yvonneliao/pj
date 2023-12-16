@@ -1,4 +1,4 @@
-container {
+.container {
     height: 100vh; /* Set the container height to full viewport height */
     display: flex;
     flex-direction: column;
@@ -12,6 +12,22 @@ section {
 
 section:nth-child(odd) {
     background-color: rgb(251, 254, 255);
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #404042; /* Set link color */
+}
+
+a:hover {
+    color: #FF5020; /* Set hover color for links */
+}
+
+
+.logo {
+    flex: 1; /* Take up available space */
+    display: flex;
+    align-items: center; /* Center vertically */
 }
 
 
