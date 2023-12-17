@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
         
@@ -34,7 +35,132 @@
         </div>
     </nav>  
 
-    
+<!-- Hero Section -->
+<div class="py-5 text-center bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto col-lg-8 col-md-10">
+                <h1 class="mb-3">Grilled chicken and salmon poke bowl</h1>
+                <p class="lead mb-4">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <!-- <form class="form-inline d-flex justify-content-center">
+                    <div class="input-group"> <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append"> <button class="btn btn-primary" type="button">Search</button> </div>
+                    </div>
+                </form> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section with text and large CTA button -->
+<div class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Section with text and large CTA button</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> 
+                <!-- Open modal button -->
+                <button id="modalCal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to Calendar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section with Full background image -->
+<div class="py-5 text-white bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Section with Full background image</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<div class="py-5 bg-light text-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h5>Footer Content</h5>
+                <p class="mb-0">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            </div>
+            <div class="col-md-5 d-flex align-items-center justify-content-md-end">
+                <form class="input-group"> <input type="text" class="form-control" placeholder="Email address" aria-label="Email address">
+                    <div class="input-group-append"> <button type="button" class="btn btn-primary">Sign up</button> </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-3 d-flex align-items-center justify-content-center">
+                <div class="bg-light d-flex align-items-center justify-content-center circle mr-2"> <i class="d-block fab fa-facebook-f text-dark"></i> </div>
+                <div class="bg-light d-flex align-items-center justify-content-center circle mr-2"> <i class="d-block fab fa-twitter text-dark"></i> </div>
+                <div class="bg-light d-flex align-items-center justify-content-center circle mr-2"> <i class="d-block fab fa-instagram text-dark"></i> </div>
+                <div class="bg-light d-flex align-items-center justify-content-center circle mr-2"> <i class="d-block fab fa-google-plus-g text-dark"></i> </div>
+                <div class="bg-light d-flex align-items-center justify-content-center circle"> <i class="d-block fas fa-envelope text-dark"></i> </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mt-3 text-center">
+                <p class="mb-0"><i class="fas fa-solid fa-thumbs-up"></i> There is no copyright. All copies welcome.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal (hidden by default) -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal content -->
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Add to Calendar</h4>
+            <button id="modalClose" type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="https://calendar.google.com/calendar/r/eventedit?text=Grilled+chicken+and+salmon+poke+bowl&dates=20210930T180000Z/20210930T190000Z&details=This+is+a+simple+hero+unit%2C+a+simple+jumbotron-style+component+for+calling+extra+attention+to+featured+content+or+information.&location=Online&sf=true&output=xml" target="_blank" class="btn btn-primary btn-block">Google Calendar</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=2021-09-30T18:00:00Z&enddt=2021-09-30T19:00:00Z&subject=Grilled+chicken+and+salmon+poke+bowl&body=This+is+a+simple+hero+unit%2C+a+simple+jumbotron-style+component+for+calling+extra+attention+to+featured+content+or+information.&location=Online" target="_blank" class="btn btn-primary btn-block">Outlook Calendar</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://calendar.yahoo.com/?v=60&view=d&type=20&title=Grilled+chicken+and+salmon+poke+bowl&st=20210930T180000Z&dur=0100&desc=This+is+a+simple+hero+unit%2C+a+simple+jumbotron-style+component+for+calling+extra+attention+to+featured+content+or+information.&in_loc=Online&url=https%3A%2F%2Fwww.chefgpt.com%2Fpoke%2F" target="_blank" class="btn btn-primary btn-block">Yahoo Calendar</a>
+                </div> 
+                <div class="col-md-6">
+                    <a href="https://www.facebook.com/events/upcoming?action_history=null&event_time_id=0&ref=46&source=4&source_dashboard_filter=upcoming&source=4&source_dashboard_filter=upcoming" target="_blank" class="btn btn-primary btn-block">Facebook Event</a>               
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script>
+    // DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Open modal when Add to Calendar button is clicked
+        var modalCal = document.getElementById('modalCal');
+        modalCal.addEventListener('click', function() {
+            document.getElementById('myModal').style.display = 'block';
+            // set opacity to 1
+            document.getElementById('myModal').style.opacity = '1';
+        });
+
+        // Close modal when Close button is clicked
+        var modalClose = document.getElementById('modalClose');
+        modalClose.addEventListener('click', function() {
+            document.getElementById('myModal').style.display = 'none';
+            // set opacity to 0
+            document.getElementById('myModal').style.opacity = '0';
+        });
+    });
+</script>
 
 </body>
 </html>
