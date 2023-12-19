@@ -1,7 +1,10 @@
-* { font-family: sans-serif; }
+* { 
+    font-family: sans-serif; 
+}
 
 body {
     margin: 0; /* Remove default margin */
+    color: #1D1D1F;
 }
 
 a {
@@ -17,35 +20,181 @@ a:hover {
     background-color: #FF5020;
     border: none;
     border-radius: 100px;
-  }
+    opacity: 0.85;
+}
 
-.btn:hover {
+.btn:hover, .btn:hover i {
     background-color: #FF5020;
-    opacity: 0.7;
-  }
+    opacity: 1;
+    transition: 300ms ease-in-out;
+}
 
-.btn:active, .btn.focus, .btn:focus, .btn:active:focus, .btn:active.focus, .btn:active:hover, .btn.focus:active, .btn:active:hover, .btn.focus:hover, .btn:hover {    
-    background-color: #FF5020 !important;
+.btn:active, .btn.focus, .btn:focus, .btn:active.focus, .btn.focus:active {    
+    background-color: #e94518 !important;
     border:none !important;
     box-shadow: none !important;
-  }
+}
 
 .btn-wide {
     font-weight: 500;
-    padding: 1em 2em; /* Add space around text */
-    width: 50%;
+    padding: .7em 2em; /* Add space around text */
+    /* width: 50%; */
+}
+
+.btn-xl {
+    font-size: 2em;
+    padding: .5em;
+    width: 2em;
+}
+
+.iBtnColor-01, .margin-butt-A .btn:focus {
+    background-color: #4a20c8 !important;
+}
+
+.iBtnColor-01:hover, .iBtnColor-01:hover i {
+    background-color: #4a20c8;
+}
+
+.iBtnColor-02 {
+    background-color: #f8005f;
+}
+
+.iBtnColor-02:hover, .iBtnColor-02:hover i {
+    background-color: #e80357;
 }
 
 .margin-butt-A {
     margin-bottom: .6em; /* Add space below element */
 } 
 
-
-.logo {
-    flex: 1; /* Take up available space */
-    display: flex;
-    align-items: center; /* Center vertically */
+.iMargin-butt-02 {
+    margin-bottom: 2em; 
 }
 
+.iPaddButt-01 {
+    padding: 1.5em !important;
+}
+
+.iBg-pink {
+    background-color: #FFF3F3;
+}
+
+.flex-container {
+    display: flex;
+    padding: 0.2em 3em;
+}
+.ml-auto {
+    margin-left: auto;
+}
+
+.flex-container .container {
+    padding: 0;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    margin-top: 0.05em;
+}
+
+.navbar { 
+    margin-top: 0;
+    padding: 0.2em 0.6em 0em;
+}
+.nav-link { 
+    padding-top: 0.4em; 
+    padding-bottom: 0.3em; 
+    font-size: 1em;
+}
+.navbar-light .navbar-nav .nav-link { color: rgba(0, 0, 0, 0.7); }
+.navbar-light .navbar-nav .nav-link:hover { color: rgba(0, 0, 0, 1); }
+button.dropdown-toggle { outline: none; }
+
+.fa-angle-down { margin-top: 0.2em;}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-toggle:active, .dropdown-toggle:focus, .dropdown-toggle:active:focus, .dropdown-toggle.focus, .dropdown-toggle.focus:active {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.dropdown-toggle:hover {
+    background-color: #e7e7e7;
+    border-radius: 20%;
+}
+
+.iSearch { margin: 0.6em 0; }
+.iSearch a { color: #b7b7b7; }
+.iSearch a:hover { color:#FF5020; }
+
+.iBold { font-weight: 400; }
+.iBold-02 { font-weight: 600; font-size: 46px; color: #F55E21; letter-spacing: -0.02em; }
+
+.iLead { font-size: 0.85em; }
+.iLead-02 { font-size: 1.1em; font-weight: 500; color:#A98787; }
+
+ul.iBullet-01 { list-style-type: none; }  
+ul.iBullet-01 li { padding: 0.3em; line-height: 1.2em; }
 
 
+.round {
+    position: relative;
+  }
+  
+  .round label {
+    background-color: #fff;
+    border: 2px solid #969696;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 20px;
+  }
+  .round label p { 
+    position: relative; 
+    margin-left: 1.6em; 
+    min-width: 15em; 
+    font-size: 1em;
+    font-weight: 400;
+    color: #969696;
+}
+  
+  .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 5px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    transform: rotate(-45deg);
+    width: 9px;
+  }
+  
+  .round input[type="checkbox"] {
+    visibility: hidden;
+  }
+  
+  .round input[type="checkbox"]:checked + label {
+    background-color: #F55E21;
+    border-color: #F55E21;
+  }
+  
+  .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+  .iH6 { font-size: 1em; font-weight: 600; color: #F55E21; line-height: 0.5em; }
