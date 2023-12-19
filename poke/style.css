@@ -47,6 +47,27 @@ a:hover {
     width: 2em;
 }
 
+.btn-circle {
+    border-radius: 100%;
+    width: 3em;
+    height: 3em;
+    font-size: x-large;
+    margin-top: -1.1em;
+}
+.btn-circle:hover {
+    background-color: #fff;
+    border: 3px solid #FF5020;
+    opacity: 1;
+    transition: 300ms ease-in-out;
+}
+.btn-circle:hover i {
+    color:#FF5020;
+    background-color: #fff;
+    border: 0;
+    opacity: 1;
+}
+.btn-circle:active i, .btn-circle:focus i { background: none; color: #FFF; }
+
 .iBtnColor-01, .margin-butt-A .btn:focus {
     background-color: #4a20c8 !important;
 }
@@ -139,13 +160,30 @@ button.dropdown-toggle { outline: none; }
 
 .iBold { font-weight: 400; }
 .iBold-02 { font-weight: 600; font-size: 46px; color: #F55E21; letter-spacing: -0.02em; }
+.iBold-03 { font-weight: 600; font-size: 30px; color: #F55E21; }
+
 
 .iLead { font-size: 0.85em; }
 .iLead-02 { font-size: 1.1em; font-weight: 500; color:#A98787; }
 
 ul.iBullet-01 { list-style-type: none; }  
-ul.iBullet-01 li { padding: 0.3em; line-height: 1.2em; }
+ul.iBullet-01 li { padding: 0.4em; line-height: 1.0em; }
 
+ol.iBullet-02 { margin: 0; padding: 0; }
+ol.iBullet-02 li { position: relative; line-height: 1.65em; margin:1em 0; padding-left: 0.7em; }  
+ol.iBullet-02 li::before {  
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    width: 1.8em;
+    height: 1.8em;
+    background-color: #F55E21;
+    z-index: -1;
+    border-radius: 100%;
+    left: -1.72em;
+    top: -0.1em;
+}
+ol.iBullet-02 li::marker { color:#fff; }
 
 .round {
     position: relative;
@@ -161,14 +199,17 @@ ul.iBullet-01 li { padding: 0.3em; line-height: 1.2em; }
     position: absolute;
     width: 20px;
   }
-  .round label p { 
+  .round label p, ol.iBullet-02 li, ol.iBullet-02 p, .iP-01 p { 
     position: relative; 
     margin-left: 1.6em; 
     min-width: 15em; 
-    font-size: 1em;
+    font-size: 1.05em;
     font-weight: 400;
     color: #969696;
 }
+.iP-01 p { margin-left: 0; line-height: 1.8em; font-weight: 500; font-size: 1.1em; }
+.iP-01 p strong { color: #F55E21;}
+ol.iBullet-02 p { margin-left:0; }
   
   .round label:after {
     border: 2px solid #fff;
@@ -198,3 +239,4 @@ ul.iBullet-01 li { padding: 0.3em; line-height: 1.2em; }
   }
 
   .iH6 { font-size: 1em; font-weight: 600; color: #F55E21; line-height: 0.5em; }
+

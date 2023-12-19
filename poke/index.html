@@ -97,7 +97,7 @@
 
 
 <!-- 1. INGREDIENTS: Section with large header aligned left and 3 columns text -->
-<div class="py-5">
+<div class="pt-5 pb-4 mb-2">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
@@ -108,7 +108,7 @@
             <div class="col-md-4">
                 <h6 class="iH6">For the Poke Bowl</h6>
                     <ul class="iBullet-01 round">
-                        <li><input type="checkbox" id="ingredient1" name="ingredient1" value="">
+                        <li ><input type="checkbox" id="ingredient1" name="ingredient1" value="">
                             <label for="ingredient1"><p>2 cups cooked brown rice</p></label></li>
                         <li><input type="checkbox" id="ingredient2" name="ingredient2" value="">
                             <label for="ingredient2"><p>1/4 cup edamame beans</p></label></li>
@@ -119,14 +119,21 @@
             <div class="col-md-4">
                 <h6 class="iH6">For the Salmon</h6>
                     <ul class="iBullet-01 round">
-                        <li><input type="checkbox" id="ingredientB1" name="ingredient1" value="">
-                            <label for="ingredientB1"><p>2 cups cooked brown rice</p></label></li>
-                        <li><input type="checkbox" id="ingredientB2" name="ingredient2" value="">
-                            <label for="ingredientB2"><p>1/4 cup edamame beans</p></label></li>
-                        <li><input type="checkbox" id="ingredientB3" name="ingredient3" value="">
-                            <label for="ingredientB3"><p>1 avocado, sliced</p></label></li>
+                        <li class="pb-3"><input type="checkbox" id="ingredientB1" name="ingredient1" value="">
+                            <label for="ingredientB1"><p>1 sashimi salmon fillets, diced</p>
+                            </label></li>
                     </ul>
-            </div>
+                <h6 class="iH6">For the Chicken</h6>
+                    <ul class="iBullet-01 round">
+                        <li><input type="checkbox" id="ingredientB1a" name="ingredient1" value="">
+                            <label for="ingredientB1a"><p>2 cups cooked brown rice</p></label></li>
+                        <li><input type="checkbox" id="ingredientB2b" name="ingredient2" value="">
+                            <label for="ingredientB2b"><p>1/4 cup edamame beans</p></label></li>
+                        <li><input type="checkbox" id="ingredientB3a" name="ingredient3" value="">
+                            <label for="ingredientB3a"><p>1 avocado, sliced</p></label></li>
+                    </ul>
+
+                </div>
             <div class="col-md-4">
                 <h6 class="iH6">For the Sauce</h6>
                     <ul class="iBullet-01 round">
@@ -139,8 +146,15 @@
                     </ul>
             </div>
         </div>
+        <div class="row d-flex flex-row-reverse">
+            <button id="iBtnTooltip" type="button" class="btn btn-circle" data-toggle="tooltip" data-placement="top" title="Copy to clipboard" data-target="iBtnTooltip">
+                <i class="fa-regular fa-copy fa-lg"></i>
+              </button>
+        </div>
     </div>
 </div>
+
+
 
 <!-- B. Savory and Saucy: Section with Full background image -->
 <div class="py-5 text-white bg-image iPaddButt-01" style="background-image: url('img/sprinkle.jpg'); height: 90vh; background-position: center; background-size: cover; background-repeat: no-repeat;">
@@ -154,23 +168,50 @@
 </div>
 
 <!-- 2. INSTRUCTIONS: Section with large header aligned left and 3 columns text -->
-<div class="py-5">
+<div class="pt-5 pb-4 mb-3">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h1>Instructions</h1>
+                <h1 class="iBold-02 mb-2">Instructions</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p>Column 1</p>
+                <ol class="iBullet-02" start="1">
+                    <li>
+                        Whisk together the soy sauce, sesame oil, and garlic powder in a medium bowl. Add the chicken pieces and toss to coat. 
+                    </li>
+                    <li>
+                        Sauté the chicken in a skillet over medium heat for 5-7 minutes.
+                    </li>
+                </ol>
             </div>
             <div class="col-md-4">
-                <p>Column 2</p>
+                <ol class="iBullet-02" start="3">
+                    <li>
+                        Divide the rice and the mixed greens among two bowls.
+                    </li>
+                    <li>
+                        Top each bowl with grilled chicken, raw salmon, avocado, edamame, and tofu. 
+                    </li>
+                </ol>
             </div>
             <div class="col-md-4">
-                <p>Column 3</p>
+                <ol class="iBullet-02" start="5">
+                    <li>
+                        In a small bowl, whisk together the mayonnaise and sriracha. Drizzle over the poke bowls.
+                    </li>
+                    <p>
+                        Sprinkle with sesame seeds and green onions. Serve immediately and enjoy!
+                    </p>
+                </ol>
             </div>
+        </div>
+
+        <div class="row d-flex flex-row-reverse">
+            <button id="iBtnTooltip" type="button" class="btn btn-circle" data-toggle="tooltip" data-placement="top" title="Copy to clipboard" data-target="iBtnTooltip">
+                <i class="fa-regular fa-copy fa-lg"></i>
+              </button>
         </div>
     </div>
 </div>
@@ -186,27 +227,31 @@
     </div>
 </div>
 
-<!-- A section with solid background color and secondary header -->
+<!-- Tip: section with solid background color and secondary header -->
 <div class="py-5 iBg-pink">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h3>Tip Section with solid background color</h3>
+                <h4 class="iBold-03 mb-3"><i class="fa-regular fa-lightbulb fa-bounce fa-lg"></i>&nbsp; Tips</h4>
+            </div>
+        </div>
+        <div class="row mb-3 iP-01">
+            <div class="col-md-4 pr-5">
+                <p><strong>For a spicier flavor, try to</strong> swap in spicy mayo or add more sriracha sauce to the mayonnaise mixture.</p>
+            </div>
+            <div class="col-md-4 pr-5">
+                <p><strong>You can also add other</strong> toppings such as finely chopped cilantro, fish roe, seaweed strip, or fried onions.</p>
+            </div>
+            <div class="col-md-4 pr-5">
+                <p><strong>This recipe is great for</strong> meal prep! Make the bowls ahead of time and store them in the fridge for up to 3 days.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <p>Column 1</p>
-            </div>
-            <div class="col-md-4">
-                <p>Column 2</p>
-            </div>
-            <div class="col-md-4">
-                <p>Column 3</p>
+            <!-- Button: Open share modal -->
+            <div class="mx-auto">
+                <button id="iBtnShareId" type="button" class="btn btn-primary btn-wide" data-toggle="modal" data-target="#iBtnShareTarget"><i class="fa fa-solid fa-share"></i>&nbsp; Share this Recipe</button>
             </div>
         </div>
-        <!-- Button: Open share modal -->
-        <button id="iBtnShareId" type="button" class="btn btn-primary btn-wide" data-toggle="modal" data-target="#iBtnShareTarget"><i class="fa fa-solid fa-share"></i>&nbsp; Share this Recipe</button>
     </div>
 </div>
 
@@ -231,32 +276,35 @@
 
 
 <!----------- Footer ----------->
-<div class="py-5 bg-light text-dark">
+<div class="py-4 bg-light text-dark">
     <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <h5>Footer Content</h5>
-                <p class="mb-0">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-md-1 px-3">
+                <img src="img/logo-mark.png" style="width: 3.5em;">
             </div>
-            <div class="col-md-5 d-flex align-items-center justify-content-md-end">
-                <form class="input-group"> <input type="text" class="form-control" placeholder="Email address" aria-label="Email address">
-                    <div class="input-group-append"> <button type="button" class="btn btn-primary">Sign up</button> </div>
-                </form>
+            <div class="col-md-3 d-flex align-items-center justify-content-md-end">
+                <p class="mt-1" style="font-size: 0.8em;">Powered by ChatGPT, Chef GPT is an unreal chef recreating recipes</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 mt-3 d-flex align-items-center justify-content-center">
+            <div class="col-md-5 mt-3 text-left pt-2">
+                <p class="mb-0" style="color: #838383; font-size: 0.9em;"><i class="fa-solid fa-thumbs-up fa-bounce"></i>&nbsp; There is no copyright. All copies welcome.</p>
+            </div>
+            
+            <div class="col-md-3 mt-3 d-flex align-items-center">
                 <div class="bg-light d-flex align-items-center justify-content-center circle mr-2"> <i class="d-block fab fa-facebook-f text-dark"></i> </div>
                 <div class="bg-light d-flex align-items-center justify-content-center circle mr-2"> <i class="d-block fab fa-twitter text-dark"></i> </div>
                 <div class="bg-light d-flex align-items-center justify-content-center circle mr-2"> <i class="d-block fab fa-instagram text-dark"></i> </div>
                 <div class="bg-light d-flex align-items-center justify-content-center circle mr-2"> <i class="d-block fab fa-google-plus-g text-dark"></i> </div>
                 <div class="bg-light d-flex align-items-center justify-content-center circle"> <i class="d-block fas fa-envelope text-dark"></i> </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 mt-3 text-center">
-                <p class="mb-0"><i class="fa-solid fa-thumbs-up fa-bounce"></i>&nbsp; There is no copyright. All copies welcome.</p>
+
+            <div class="col-md-4 d-flex align-items-center justify-content-md-end mt-3">
+                <form class="input-group"> <input type="text" class="form-control" placeholder="Email address" aria-label="Email address">
+                    <div class="input-group-append"> <button type="button" class="btn btn-primary">Subscribe</button> </div>
+                </form>
             </div>
+
         </div>
     </div>
 </div>
@@ -363,8 +411,6 @@
             document.getElementById('myModal').style.display = 'block';
             // set opacity to 1
             document.getElementById('myModal').style.opacity = '1';
-            // Set background opacity to 0.5
-            document.getElementById('myModal').style.backgroundColor = 'rgba(0,0,0,0.5)';
         });
 
         // Close modal when Close button is clicked
@@ -387,8 +433,6 @@
             document.getElementById('iBtnShareTarget').style.display = 'block';
             // set opacity to 1
             document.getElementById('iBtnShareTarget').style.opacity = '1';
-            // Set background opacity to 0.5
-            document.getElementById('iBtnShareTarget').style.backgroundColor = 'rgba(0,0,0,0.5)';
         });
 
         // Close modal when Close button is clicked
@@ -401,15 +445,20 @@
     });
 </script>
 
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap Util.js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Tooltip -->
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 
 </body>
 </html>
 
-
-</body>
-</html>
