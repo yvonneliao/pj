@@ -29,17 +29,24 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbar12">
                     <ul class="navbar-nav">
-                        <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#">Services</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">American</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Hawaiian</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Mediterranean</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Persian</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">African</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Italian</a> </li>
                             <div class="dropdown">
                                 <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-angle-down"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Scandinavian</a>
+                                    <a class="dropdown-item" href="#">French</a>
+                                    <a class="dropdown-item" href="#">Central European</a>
+                                    <a class="dropdown-item" href="#">Mexican</a>
+                                    <a class="dropdown-item" href="#">Thai</a>
+                                    <a class="dropdown-item" href="#">Chinese</a>
+                                    <a class="dropdown-item" href="#">Korean</a>
+                                    <a class="dropdown-item" href="#">Japanese</a>
                                 </div>
                             </div>
                     </ul>
@@ -114,6 +121,14 @@
                             <label for="ingredient2"><p>1/4 cup edamame beans</p></label></li>
                         <li><input type="checkbox" id="ingredient3" name="ingredient3" value="">
                             <label for="ingredient3"><p>1 avocado, sliced</p></label></li>
+                        <li ><input type="checkbox" id="ingredient4" name="ingredient1" value="">
+                            <label for="ingredient4"><p>2 cups mixed salad greens</p></label></li>
+                        <li><input type="checkbox" id="ingredient5" name="ingredient2" value="">
+                            <label for="ingredient5"><p>1/2 box firm tofu, cubed</p></label></li>
+                        <li><input type="checkbox" id="ingredient6" name="ingredient3" value="">
+                            <label for="ingredient6"><p>1/4 cup scallions, finely chopped</p></label></li>
+                        <li><input type="checkbox" id="ingredient7" name="ingredient3" value="">
+                            <label for="ingredient7"><p>1 tablespoon sesame seeds</p></label></li>
                     </ul>
             </div>
             <div class="col-md-4">
@@ -125,24 +140,26 @@
                     </ul>
                 <h6 class="iH6">For the Chicken</h6>
                     <ul class="iBullet-01 round">
-                        <li><input type="checkbox" id="ingredientB1a" name="ingredient1" value="">
-                            <label for="ingredientB1a"><p>2 cups cooked brown rice</p></label></li>
-                        <li><input type="checkbox" id="ingredientB2b" name="ingredient2" value="">
-                            <label for="ingredientB2b"><p>1/4 cup edamame beans</p></label></li>
-                        <li><input type="checkbox" id="ingredientB3a" name="ingredient3" value="">
-                            <label for="ingredientB3a"><p>1 avocado, sliced</p></label></li>
-                    </ul>
+                        <li><input type="checkbox" id="ingredientB5" name="ingredient1" value="">
+                            <label for="ingredientB5"><p>2 boneless chicken breasts</p></label></li>
+                        <li><input type="checkbox" id="ingredientB2" name="ingredient2" value="">
+                            <label for="ingredientB2"><p>2 tablespoons soy sauce</p></label></li>
+                        <li><input type="checkbox" id="ingredientB3" name="ingredient3" value="">
+                            <label for="ingredientB3"><p>1 tablespoon sesame oil</p></label></li>
+                        <li><input type="checkbox" id="ingredientB4" name="ingredient3" value="">
+                            <label for="ingredientB4"><p>1/4 teaspoon garlic powder</p></label></li>    
+                        </ul>
 
                 </div>
             <div class="col-md-4">
                 <h6 class="iH6">For the Sauce</h6>
                     <ul class="iBullet-01 round">
                         <li><input type="checkbox" id="ingredientC1" name="ingredient1" value="">
-                            <label for="ingredientC1"><p>2 cups cooked brown rice</p></label></li>
+                            <label for="ingredientC1"><p>2 tablespoons soy sauce</p></label></li>
                         <li><input type="checkbox" id="ingredientC2" name="ingredient2" value="">
-                            <label for="ingredientC2"><p>1/4 cup edamame beans</p></label></li>
+                            <label for="ingredientC2"><p>1 tablespoon rice vinegar</p></label></li>
                         <li><input type="checkbox" id="ingredientC3" name="ingredient3" value="">
-                            <label for="ingredientC3"><p>1 avocado, sliced</p></label></li>
+                            <label for="ingredientC3"><p>1 tablespoon sesame oil</p></label></li>
                     </ul>
             </div>
         </div>
@@ -278,14 +295,42 @@
 <!----------- Footer ----------->
 <div class="py-4 bg-light text-dark">
     <div class="container">
-        <div class="row mb-4 justify-content-center">
+        <div class="row mb-2 pb-1 justify-content-center">
             <div class="col-md-1 px-3">
                 <img src="img/logo-mark.png" style="width: 3.5em;">
             </div>
             <div class="col-md-3 d-flex align-items-center justify-content-md-end">
-                <p class="mt-1" style="font-size: 0.8em;">Powered by ChatGPT, CHEF GPT is an unreal chef recreating recipes</p>
+                <p class="mt-1 iFont-size-5">Powered by ChatGPT, CHEF GPT is an unreal chef recreating recipes</p>
             </div>
         </div>
+
+        <!-- BEGIN: Add row with border top -->
+        <div class="row iFont-size-5" style="width: 100%; border-top: 1.5px solid #D8D8DD;">
+            <div class="col-md-12 py-2" style="border-bottom: 1.5px solid #D8D8DD;">
+                <a href="#"><i class="fa-solid fa-house fa-xs"></i></a>
+                <i class="fa-solid fa-angle-right mx-1"></i>
+                <a href="#">Hawaiian</a>  <i class="fa-solid fa-angle-right mx-1"></i>
+                <span style="color:#999;"> Grilled chicken and salmon poke bowl </span>
+            </div>
+            <div class="col-md-12 py-2 d-flex justify-content-left flex-wrap" style="border-bottom: 1.5px solid #D8D8DD;">
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">American</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Hawaiian</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Mediterranean</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Persian</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">African</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Italian</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Scandinavian</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">French</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Central European</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Mexican</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Thai</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Chinese</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Korean</a></div>
+                <div class="col-md-2 border-bottom mx-2 iPadding-none"><a href="#">Japanese</a></div>
+            </div>
+        </div>
+        <!-- END: Add row with border top -->
+
         <div class="row">
             <div class="col-md-5 mt-3 text-left pt-2">
                 <p class="mb-0" style="color: #838383; font-size: 0.9em;"><i class="fa-solid fa-thumbs-up fa-bounce"></i>&nbsp; There is no copyright. All copies welcome.</p>

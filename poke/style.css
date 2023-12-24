@@ -104,6 +104,14 @@ a:hover {
     display: flex;
     padding: 0.2em 3em;
 }
+/* for mobile device, padding left and right is 1em */
+@media only screen and (max-width: 600px) {
+    .flex-container {
+        padding: 0.2em 1em;
+    }
+}
+
+
 .ml-auto {
     margin-left: auto;
 }
@@ -240,3 +248,7 @@ ol.iBullet-02 p { margin-left:0; }
 
   .iH6 { font-size: 1em; font-weight: 600; color: #F55E21; line-height: 0.5em; }
 
+.iFont-size-5 { font-size: 0.8em; color:#404042; }
+.iFont-size-5 a { text-decoration: none; }
+
+.iPadding-none { padding-right: 0; padding-left: 8px; margin-bottom: 0.5em; line-height: 2rem; }
